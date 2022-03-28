@@ -1,0 +1,136 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        text-align: center;
+        font-family: sans-serif;
+        padding-left: 10px;
+    }
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    .info {
+        text-align: left;
+        width: 600px;
+        margin: 0 auto;
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .colors {
+        width: 600px;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 20px;
+        list-style: none;
+        background-color: rgba(211, 195, 195, 0.493);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .colors li {
+        margin-bottom: 10px;
+    }
+  
+    .container {
+        display: flex;
+        flex-flow: wrap;
+        margin: 0 auto;
+        width: 650px;
+    }
+    
+    .bus {
+        display: block;
+        height: 320px;
+        width: 320px;
+        margin: 0 20px 20px 0;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding-top: 80px;
+    }
+
+    .red  {
+        color: red;
+    }
+    .green {
+        color: rgb(6, 219, 6);
+    }
+    .yellow {
+        color: rgb(224, 224, 2);
+    }
+    .black  {
+        color: #000;
+    }
+    .orange {
+        color: orange;
+    }
+    .blue {
+        color:blue;
+    }
+    
+    .editor {
+        width: 280px;
+    }
+    
+    .editor input {
+        width: 250px;
+        height: 30px;
+        margin-bottom: 10px;
+        font-size: large;
+        font-family: sans-serif;
+        padding-left: 5px;
+        outline: none;
+        border: 1px solid grey;
+        color: rgb(54, 54, 54);
+        border-radius: 5px;
+    }
+    
+    .command-list {
+        counter-reset: number;
+        list-style-type: none;
+        padding-top: 0px;
+    }
+    
+    .command-list li::before {
+        counter-increment: number;
+        content: counter(number)"\a0\a0";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .btn-run {
+        margin-left: 18px;
+        margin-bottom: 50px;
+        background-color: rgba(13, 236, 32, 0.932);
+        width: 250px;
+        height: 30px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .btn-run:hover {
+        color: rgba(255, 255, 255, 0.932);
+        border: 1px solid rgb(255, 255, 255);
+        ;
+    }
+    
+    .bad-command {
+        background-color: rgba(255, 0, 0, 0.432)
+    }
+    
+    .correct-command {
+        background-color: rgba(1, 252, 1, 0.384)
+    }
+    
+    footer {
+        margin-bottom: 30px;
+    }
