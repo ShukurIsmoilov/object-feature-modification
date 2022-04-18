@@ -107,10 +107,10 @@ function getCommand() {
 
         codeLines[num].removeAttribute("disabled");
 
-    } else if (command !== "" && command === "bus.color = 'orange';") {
+    } else if (command !== "" && command === "bus.color = 'purple';") {
 
         bus.classList.remove(currentColor);
-        currentColor = "orange";
+        currentColor = "purple";
         bus.classList.add(currentColor);
         console.log("Bus color changed to "+currentColor);
 
